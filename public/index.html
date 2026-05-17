@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Helper</title>
+    <link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="bar">
+        <h1>Weather Helper</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <section class="content-area">
+            <!-- Entering City -->
+            <h1 id="announcements">Plan your day with better weather advice!</h1>
+            <p id="paragraph">Search a city to get current weather and simple recommendations</p>
+
+            <div class="content-box">
+                <input id="cityInput" type="text" placeholder="Enter a city, ex: New York City" />
+                <button id="getWeather" onclick="getWeather()">Get Weather</button>
+            </div>
+
+            <!-- Results -->
+            <div class="weather-box">
+                <h1>Results</h1>
+                <hr>
+                <p id="cityName"></p>
+                <p id="condition"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+
+                <h3>Weather Advice</h3>
+                <p id="advice"></p>
+
+                <button id="saveButton" onclick="saveLocation()">Save Location</button>
+            </div>
+
+            <!-- Chart -->
+            <div class="library-section">
+                <h2>Temperature Chart</h2>
+                <canvas id="weatherChart"></canvas>
+            </div>
+
+            <!-- Map -->
+            <div class="library-section">
+                <h2>City Map</h2>
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- Saved Locations -->
+        <aside id="savedLocationsPanel">
+            <h2>Saved Locations</h2>
+            <hr>
+            <button id="refreshButton" onclick="loadSavedLocations()">Refresh Saved Locations</button>
+            <ul id="savedLocations"></ul>
+            <button id="clearButton" onclick="clearSavedLocations()">Clear Saved Locations</button>
+        </aside>
+    </div>
+
+    <!-- random footer -->
+    <footer id="bar">
+        <p>Weather Helper</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+  background-color: #86C5D8;
+}
+
+/* Navigation Bar */
+#bar {
+  text-align: center;
+  background-color: #AFDCEB;
+  color: black;
+  padding: 5px;
+  font-family: Georgia, serif;
+}
+
+#main-nav {
+  background-color: #ADD8E6;
+  color: black;
+  text-align: center;
+  font-family: Georgia;
+}
+
+#main-nav li {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+#main-nav li:hover {
+  background-color: #E7F1F9;
+}
+
+/* Main Section */
+.main-container {
+  border: 2px solid black;
+  background-color: #CAE9F5;
+  width: 95%;
+  min-height: 70%;
+  border-radius: 15px;
+  margin: 15px auto;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.content-area {
+  width: 75%;
+}
+
+#announcements {
+  padding-left: 10px;
+  font-family: Georgia, serif;
+}
+
+#paragraph {
+  padding-left: 10px;
+}
+
+.content-box,
+.weather-box,
+.library-section {
+  background-color: #F0F8FF;
+  color: black;
+  border: 2px solid black;
+  margin: 10px 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: Georgia, serif;
+}
+
+.weather-box {
+  background-color: #E7F1F9;
+  text-align: center;
+}
+
+#cityInput {
+  padding: 5px;
+  width: 65%;
+}
+
+#getWeather,
+#saveButton,
+#refreshButton {
+  color: black;
+  font-family: Georgia, serif;
+  padding: 5px;
+}
+
+#getWeather:hover,
+#saveButton:hover,
+#refreshButton:hover {
+  background-color: #E7F1F9;
+}
+
+/* Sidebar */
+#savedLocationsPanel {
+  font-family: Georgia, serif;
+  text-align: center;
+  background-color: #E7F1F9;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 25%;
+  padding: 10px;
+  height: fit-content;
+}
+
+#savedLocations {
+  text-align: left;
+}
+
+#clearButton {
+  color: black;
+  font-family: Georgia, serif;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#clearButton:hover {
+  background-color: #E7F1F9;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+canvas {
+  max-width: 100%;
+}
