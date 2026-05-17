@@ -206,3 +206,7 @@ body {
 #map{
   height: 250px;
 }
+
+#main-nav li {
+  display: block;
+}
