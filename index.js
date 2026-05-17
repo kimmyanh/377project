@@ -76,6 +76,7 @@ app.listen(port, () => {
   console.log(`App is available on port: ${port}`);
 });
 
+// Deleting saved locations
 app.delete('/api/saved-locations', async (req, res) => {
   const { data, error } = await supabase
     .from('saved_locations')

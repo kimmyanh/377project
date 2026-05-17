@@ -77,16 +77,32 @@ body {
   width: 65%;
 }
 
-#getWeather,
-#saveButton,
+#getWeather{
+  color: black;
+  font-family: Georgia, serif;
+  padding: 5px;
+}
+
+#saveButton{
+  color: black;
+  font-family: Georgia, serif;
+  padding: 5px;
+}
+
 #refreshButton {
   color: black;
   font-family: Georgia, serif;
   padding: 5px;
 }
 
-#getWeather:hover,
-#saveButton:hover,
+#getWeather:hover{
+  background-color: #E7F1F9;
+}
+
+#saveButton:hover{
+  background-color: #E7F1F9;
+}
+
 #refreshButton:hover {
   background-color: #E7F1F9;
 }
@@ -125,6 +141,68 @@ body {
   border: 2px solid black;
 }
 
-canvas {
-  max-width: 100%;
+/* Mobile Design */
+#main-nav li {
+  display: block;
+  padding: 8px;
+}
+.main-container{
+  flex-direction: column;
+  width: 95%;
+  padding: 10px;
+}
+
+.content-area {
+  width: 100%;
+}
+
+#savedLocationsPanel {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.content-box{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.weather-box{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.library-section{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#cityInput{
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#getWeather{
+  width: 100%;
+  margin-top: 5px;
+}
+
+#saveButton{
+  width: 100%;
+  margin-top: 5px;
+}
+
+#refreshButton{
+  width: 100%;
+  margin-top: 5px;
+}
+
+#clearButton{
+  width: 100%;
+  margin-top: 5px;
+}
+
+#map{
+  height: 250px;
 }
